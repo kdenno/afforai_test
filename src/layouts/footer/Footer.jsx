@@ -55,7 +55,7 @@ export function Footer() {
 
   return (
     <ContentWrapper>
-        <div className={styles['wrapper']}>
+        <footer className={styles['wrapper']}>
              <div className={styles['slot1']}>
                 <Logo/>
                 <div style={{paddingRight:'50px', marginTop: '10px', marginBottom: '10px'}}>
@@ -91,7 +91,7 @@ export function Footer() {
              <div className={styles['slot2']}>
                 {columns}
              </div>
-        </div>
+        </footer>
     </ContentWrapper>
   )
 }
