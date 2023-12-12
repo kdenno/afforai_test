@@ -17,15 +17,13 @@
 }
 
 .desktopMenu {
-    display: flex; 
-}
-
-.desktopMenu > div {
-    flex: 1
+    display: flex;
+    justify-content: space-between; 
 }
 
 .logo {
     text-align: left;
+    margin-top: 3px;
     display: flex;
 }
 
@@ -55,7 +53,7 @@
     display: flex;
     justify-content: right;
     margin-left: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .mobileMenuToggler {
@@ -79,6 +77,9 @@
         padding-top: 1.5rem;
         padding-left: 3rem;
         padding-right: 3rem;
+    }
+    .desktopMenu > div {
+        flex: 1
     }
     .nav {
         border: solid 1px rgb(209, 213, 219);
