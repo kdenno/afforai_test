@@ -1,0 +1,10 @@
+
+.logo {
+    text-align: left;
+    margin-top: 7px;
+    display: flex;
+}
+
+.logo .title {
+    margin-left: 7px
+}

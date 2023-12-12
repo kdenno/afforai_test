@@ -1,6 +1,12 @@
 .contentWrapper {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    width: '100%';
+    max-width: 1264px;
+    margin: 0 15px;
     height: auto;
+}
+
+@media (min-width: 768px) {
+    .contentWrapper {
+        margin: 0 auto;
+    }
 }
