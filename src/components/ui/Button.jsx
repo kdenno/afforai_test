@@ -1,6 +1,7 @@
 import React from 'react'
 import { Typography } from './Typography';
 import PropTypes from 'prop-types'
+import { LinkElement } from './LinkElement';
 
 const BUTTON_VARIANTS = {
   primary: {
@@ -16,6 +17,7 @@ const BUTTON_VARIANTS = {
     backgroundColor: '#f5f5f5',
     border: '1px solid #e6e6e6',
     borderRadius: '8px',
+    fontWeight: '500',
     color: '#525252',
     padding: '5px 14px',
     textAlign: 'center',
@@ -25,10 +27,26 @@ const BUTTON_VARIANTS = {
 };
 
 export function Button(props) {
-  const { onClick, disabled, btnText, variant = 'secondary', small, sx, ...restProps } = props;
+  const { onClick, disabled, to, btnText, component, variant = 'secondary', small, sx, ...restProps } = props;
+  
   const customSx = sx || null;
+  const isLinkBtn = component === 'link'
 
   return (
+    isLinkBtn ? 
+    <LinkElement to = {to}>
+      <button
+        onClick={onClick}
+        style={{...BUTTON_VARIANTS[variant], ...customSx}}
+        disabled={disabled}
+        {...restProps}
+      >
+        <Typography variant={small ? 'bodySmall' : 'titleSmall500'}>
+          {btnText}
+        </Typography>
+      </button>
+    </LinkElement> 
+    : 
     <button
       onClick={onClick}
       style={{...BUTTON_VARIANTS[variant], ...customSx}}
@@ -39,8 +57,9 @@ export function Button(props) {
         {btnText}
       </Typography>
     </button>
+    
   )
-  
+
 }
 
 Button.propTypes = {
@@ -49,5 +68,7 @@ Button.propTypes = {
   small: PropTypes.bool,
   btnText: PropTypes.string,
   sx: PropTypes.object,
+  to: PropTypes.object,
+  component: PropTypes.string,
   variant: PropTypes.oneOf(Object.keys(BUTTON_VARIANTS)),
 }

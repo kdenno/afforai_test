@@ -1,11 +1,11 @@
-import { Routes } from './Routes'
+import { AppRoutes } from './Routes'
 import { PageContainer } from './layouts/pageContainer'
 
 function App() {
 
   return (
     <PageContainer>
-      <Routes />
+      <AppRoutes />
     </PageContainer>
   )
 }
