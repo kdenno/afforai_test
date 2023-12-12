@@ -4,7 +4,8 @@ import styles from './navBar.module.css';
 import { Button } from '../../components/ui/Button';
 import { Typography } from '../../components/ui/Typography';
 import { LinkElement } from '../../components/ui/LinkElement';
-import { PATHS } from './constants';
+import { PATHS } from './utils/constants';
+import { Logo } from '../../components/ui/Logo';
 
 export function Navbar() {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -48,20 +49,7 @@ export function Navbar() {
 
                 <div className={styles['desktopMenu']}>
 
-                    <div className={styles['logo']}>
-
-                        <picture aria-label="site-logo"> 
-                            <source srcSet="/images/logo-new-violet.png" />
-                            <img src="/images/logo-new-violet.png" height="25" width="25" alt="site-logo" />
-                        </picture>
-
-                        <div className={styles['title']}>
-                            <LinkElement to='/' aria-label="to-home-page">
-                                <Typography variant='smallHeadline500'>Afforai</Typography>
-                            </LinkElement>
-                        </div>
-
-                    </div>
+                    <Logo/>
 
                     <div className={styles['navLinks']}>
                         <ul>

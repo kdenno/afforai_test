@@ -68,7 +68,7 @@ Button.propTypes = {
   small: PropTypes.bool,
   btnText: PropTypes.string,
   sx: PropTypes.object,
-  to: PropTypes.object,
+  to: PropTypes.string,
   component: PropTypes.string,
   variant: PropTypes.oneOf(Object.keys(BUTTON_VARIANTS)),
 }

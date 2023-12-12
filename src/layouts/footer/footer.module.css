@@ -1,0 +1,40 @@
+.wrapper {
+    width: '100%';
+    border: solid 1px rgb(209, 213, 219);
+    border-radius: 16px;
+    padding: 15px 15px 30px;
+}
+.wrapper a {
+    text-decoration: none;
+    color: inherit;
+}
+.wrapper .slot1 {
+    flex:1;
+    padding-right: 10px;
+    margin-bottom: 20px;
+
+}
+.wrapper .slot2 {
+    flex:2;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.wrapper .slot2 > div {
+    flex: 1;
+    padding-right: 5px;
+    margin-bottom: 15px;
+    min-width: 120px;
+}
+.footerLink {
+    line-height: 40px;
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        padding: 24px;
+        display: flex;
+    }
+    
+}

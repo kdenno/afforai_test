@@ -9,7 +9,7 @@
 }
 
 .nav {
-    padding: 8px 24px;
+    padding: 16px 15px;
     border-bottom: solid 1px rgb(209, 213, 219);
     backdrop-filter: blur(16px);
     background: rgba(250, 250, 250, 0.5);
@@ -23,16 +23,6 @@
 .desktopMenu {
     display: flex;
     justify-content: space-between; 
-}
-
-.logo {
-    text-align: left;
-    margin-top: 7px;
-    display: flex;
-}
-
-.title {
-    margin-left: 10px
 }
 
 .navLinks {
@@ -117,6 +107,7 @@
     }
     .nav {
         border: solid 1px rgb(209, 213, 219);
+        padding: 8px 24px;
         border-radius: 16px;
     }
     .navLinks {

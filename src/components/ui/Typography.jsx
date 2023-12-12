@@ -29,6 +29,10 @@ const TYPOGRAPHY_VARIANTS = {
       lineHeight: '24px',
       letterSpacing: 0.25,
   },
+  smallHeadline400: {
+    fontWeight: 500,
+    fontSize: 16,
+},
   titleMedium: {
       fontStyle: 'normal',
       fontWeight: 700,
@@ -53,6 +57,12 @@ const TYPOGRAPHY_VARIANTS = {
       letterSpacing: 0.1,
       display: 'inline'
   },
+  titleSmall400: {
+    fontSize: 12,
+    lineHeight: '18px',
+    letterSpacing: 0.1,
+    display: 'inline'
+},
   titleXSmall: {
       fontStyle: 'normal',
       fontWeight: 200,
@@ -87,11 +97,12 @@ const TYPOGRAPHY_VARIANTS = {
  
 };
 
-export function Typography ({children, variant= 'body', ...restProps}) {
+export function Typography ({children, sx, variant= 'body', ...restProps}) {
+    const customSx = sx || null;
 
   return (
     <div
-     style={{...TYPOGRAPHY_VARIANTS[variant]}}
+     style={{...TYPOGRAPHY_VARIANTS[variant], ...customSx}}
     {...restProps}
     >
       {children}
@@ -101,5 +112,6 @@ export function Typography ({children, variant= 'body', ...restProps}) {
 
 Typography.propTypes = {
   variant: PropTypes.oneOf(Object.keys(TYPOGRAPHY_VARIANTS)),
+  sx: PropTypes.object,
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),
 };
