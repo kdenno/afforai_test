@@ -1,0 +1,130 @@
+.navWrapper {
+    width: '100%';
+    max-width: 1264px;
+    left: 0;
+    position: fixed;
+    margin: 0 auto;
+    right: 0;
+    z-index: 1030;
+}
+
+.nav {
+    padding: 8px 24px;
+    border-bottom: solid 1px rgb(209, 213, 219);
+    backdrop-filter: blur(16px);
+    background: rgba(250, 250, 250, 0.5);
+    
+}
+.nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.desktopMenu {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.logo {
+    text-align: left;
+    margin-top: 7px;
+    display: flex;
+}
+
+.title {
+    margin-left: 10px
+}
+
+.navLinks {
+    text-align: left;
+    display: none;
+    margin-top: 7px;
+}
+
+.navLinks ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navLinks li {
+    margin: 0 15px;
+    width: auto;
+    text-align: center;
+}
+
+.navActions {
+    display: flex;
+    justify-content: right;
+    margin-left: 10px;
+    padding: 3px 0;
+    margin-top: 2px;
+}
+
+.mobileMenuToggler {
+    margin-left: 8px;
+    margin-top: 2px;
+    position: relative;
+    width: 30px;
+    height: 25px; 
+    border-radius: 8px;
+}
+
+.stick, .stick:before, .stick:after {
+    width: 20px;
+    height: 1px;
+    background-color: rgb(106, 107, 108);
+    top: 47%;
+    left: 5px;
+    position: absolute
+}
+.stick:before {
+    content: '';
+    top: -5px;
+    left: 0;
+    position: absolute;
+}
+.stick:after {
+    content: '';
+    top: 5px;
+    left: 0;
+    position: absolute;
+}
+
+.mobilenavLinks ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.mobilenavLinks li {
+    padding:5px;
+}
+
+@media (min-width: 768px) {
+    .navWrapper {
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .navActionsBtn {
+        padding: 5px 1rem !important
+    }
+    .desktopMenu > div {
+        flex: 1
+    }
+    .nav {
+        border: solid 1px rgb(209, 213, 219);
+        border-radius: 16px;
+    }
+    .navLinks {
+        display: block;
+        text-align: center;
+        flex: 2!important
+    }
+    .mobileMenuToggler {
+        display: none;
+    }
+}
