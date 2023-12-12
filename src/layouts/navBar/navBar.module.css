@@ -65,7 +65,31 @@
 
 .mobileMenuToggler {
     margin-left: 10px;
-    
+    position: relative;
+    width: 35px;
+    height: 26px; 
+    border-radius: 8px;
+}
+
+.stick, .stick:before, .stick:after {
+    width: 20px;
+    height: 1px;
+    background-color: rgb(106, 107, 108);
+    top: 47%;
+    left: 8px;
+    position: absolute
+}
+.stick:before {
+    content: '';
+    top: -5px;
+    left: 0;
+    position: absolute;
+}
+.stick:after {
+    content: '';
+    top: 5px;
+    left: 0;
+    position: absolute;
 }
 
 .mobilenavLinks ul {

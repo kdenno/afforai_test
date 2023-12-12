@@ -88,13 +88,14 @@ export function Navbar() {
                         to="/signup"
                         />
                         
-                        <button 
+                        <div 
                             aria-label="toggle-mobile-menu" 
                             className={styles['mobileMenuToggler']}
+                            style={{border: `solid 1px ${showMobileMenu ? 'rgb(96, 4, 255)' : 'rgb(209, 213, 219)'}`}}
                             onClick={() => setShowMobileMenu(!showMobileMenu)}
                         >
-                            MM
-                        </button>
+                            <div className={styles['stick']}></div>
+                        </div>
 
                     </div>
 
