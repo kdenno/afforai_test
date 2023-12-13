@@ -1,0 +1,17 @@
+
+.slotA {
+    flex: 1;
+
+}
+.slotB {
+    flex: 1;
+
+}
+.slotC {
+    flex: 1;
+}
+@media (min-width: 768px) {
+    .slots {
+        display: flex;
+    } 
+}
