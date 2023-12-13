@@ -19,7 +19,7 @@ export function Card(props) {
                 </Typography>
                 {badge && badge}
             </div>
-            <Typography>
+            <Typography variant='titleSmall400' sx={{color: 'rgb(82, 82, 82)'}}>
                 {caption}
             </Typography>
         </div>

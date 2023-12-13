@@ -12,17 +12,20 @@ export const CARDS_TEXT = {
         },
         card3: {
             title: 'Valuable Data Citation',
-            caption: 'Afforai is able to show exactly where your data has been extracted from & highlight it for you, so you never loose your time validating information again.'
+            caption: 'Afforai is able to show exactly where your data has been extracted from & highlight it for you, so you never loose your time validating information again.',
+            imgSrc: "/images/laptop-landing-8.png"
         },
         card4: {
             title: 'Unbreakable Security',
             caption: 'Afforai uses Azure Server & Azure OpenAI API. In other words, your data is more than safe with us.',
+            imgSrc: "/images/laptop-landing-9.png",
             link: '/security',
             linkTxt: 'Learn more'
         },
         card5: {
             title: 'Built in Document Viewer',
-            caption: 'Never Switch tabs again. Afforai’s document viewer means that you can have your uploaded files right next to your chatbot, giving you the ability to search the file, and refer to it for data citations.'
+            caption: 'Never Switch tabs again. Afforai’s document viewer means that you can have your uploaded files right next to your chatbot, giving you the ability to search the file, and refer to it for data citations.',
+            imgSrc: "/images/laptop-landing-10.png"
         }
 
     }
