@@ -11,6 +11,7 @@ import { Slots } from '../../layouts/slots'
 import { Card } from '../../components/ui/Card'
 import { CARDS_TEXT } from './utils/contants'
 import { ContentContainer } from '../../layouts/contentContainer'
+import { ButtonBadge } from '../../components/ui/ButtonBadge'
 
 
 export function HomePage() {
@@ -25,14 +26,28 @@ export function HomePage() {
 
       <Gap className={styles['appUsersGap']}>
         <div className={styles['appUsers']}>
-          <Typography variant="smallHeadline400" sx={{color: 'rgb(82, 82, 82)', fontWeight: 'unset'}}>
+          <Typography variant="smallHeadline300">
             Loved by <span style={{color: 'rgb(128, 54, 255)'}}>20,000+</span> users around the world
           </Typography >
           <img src="/images/laptop-landing-2.png" width="330" height="20" alt="AppSumo" />
         </div>
       </Gap>
+
       <ContentContainer>
+
         <Gap className={styles['builtForUsersGap']}>
+          <Gap height="50px">
+            <ButtonBadge badgeText="Why choose us?" />
+          </Gap>
+          <Typography variant='headlineLarge'>
+            Built for the user
+          </Typography >
+          <Typography variant='smallHeadline300'>
+            Afforai is where exceptional customer focus meets exceptional technology.
+          </Typography >
+        </Gap>
+
+        <Gap className={styles['builtForUsersSlots']}>
           <Slots 
             slots={{
               slotA: <Card sx={{ height: '100%'}} title={card1.title} imgSrc={card1.imgSrc} caption={card1.caption} />,
@@ -44,6 +59,7 @@ export function HomePage() {
             }}
             />
         </Gap>
+
       </ContentContainer>
         
     </ContentWrapper>

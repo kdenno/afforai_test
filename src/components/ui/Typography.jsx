@@ -9,11 +9,9 @@ const TYPOGRAPHY_VARIANTS = {
       lineHeight: '60px',
   },
   headlineLarge: {
-      fontSize: 24,
-      fontWeight: 700,
-      lineHeight: '32px',
-      letterSpacing: '0em',
-      textAlign: 'left',
+      fontSize: 36,
+      fontWeight: 600,
+      lineHeight: '60px',
   },
   smallHeadline: {
       fontStyle: 'normal',
@@ -32,6 +30,12 @@ const TYPOGRAPHY_VARIANTS = {
   smallHeadline400: {
     fontWeight: 500,
     fontSize: 16,
+    color: 'rgb(34, 34, 34)'
+},
+smallHeadline300: {
+  fontWeight: 400,
+  fontSize: 16,
+  color: 'rgb(82, 82, 82)'
 },
   titleMedium: {
       fontStyle: 'normal',
@@ -62,6 +66,12 @@ const TYPOGRAPHY_VARIANTS = {
     lineHeight: '18px',
     letterSpacing: 0.1,
     display: 'inline'
+},
+titleSmall300: {
+  fontSize: 13,
+  lineHeight: '18px',
+  letterSpacing: 0.1,
+  display: 'inline'
 },
   titleXSmall: {
       fontStyle: 'normal',
