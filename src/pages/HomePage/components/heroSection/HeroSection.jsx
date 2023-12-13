@@ -3,6 +3,7 @@ import React from 'react'
 import { Typography } from '../../../../components/ui/Typography'
 import { Button } from '../../../../components/ui/Button'
 import styles from './heroSection.module.css';
+import { Gap } from '../../../../components/ui/Gap';
 
 export function HeroSection() {
   return (
@@ -20,9 +21,11 @@ export function HeroSection() {
                 to="https://appsumo.8odi.net/3eR3xn"
               />
           </div>
-          <Typography variant='headline' sx={{maxWidth: '659px', margin: '20px auto'}}>
-            Your second brain for maximizing productivity
-          </Typography>
+          <Gap className={styles['customHeader']}>
+            <Typography variant='headline' sx={{maxWidth: '659px', margin: '20px auto'}}>
+              Your second brain for maximizing productivity
+            </Typography>
+          </Gap>
           <Typography
             sx={{
                 maxWidth: '685px', 
