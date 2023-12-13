@@ -36,8 +36,7 @@
     border: 2px solid rgb(128, 54, 255);
     color: rgb(128, 54, 255);
     font-size: 13px;
-    width: 105px;
-    margin: 0 auto;
+    
 }
 
 @media (min-width: 768px) {
