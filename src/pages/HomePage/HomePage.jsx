@@ -50,12 +50,25 @@ export function HomePage() {
         <Gap className={styles['builtForUsersSlots']}>
           <Slots 
             slots={{
-              slotA: <Card sx={{ height: '100%'}} title={card1.title} imgSrc={card1.imgSrc} caption={card1.caption} />,
-              slotB: <Card sx={{ height: '100%'}} title={card2.title} imgSrc={card2.imgSrc} caption={card2.caption} />,
+              slotA: <Card title={card1.title} imgSrc={card1.imgSrc} caption={card1.caption} />,
+              slotB: <Card title={card2.title} imgSrc={card2.imgSrc} caption={card2.caption} />,
             }}
             slotProps={{
               slotA: {style:{...{flex: 1.4}}},
               slotB: {style:{...{flex: 2}}},
+            }}
+            />
+            <Slots 
+            slots={{
+              slotAB: {
+                AB1: <Card title={card3.title} imgSrc={card3.imgSrc} caption={card3.caption} />,
+                AB2: <Card sx={{marginTop: '20px', paddingBottom: '4px'}} title={card5.title} imgSrc={card5.imgSrc} caption={card5.caption} />,
+              },
+              slotA: <Card title={card4.title} imgSrc={card4.imgSrc} caption={card4.caption} />,
+            }}
+            slotProps={{
+              slotAB: {style:{...{flex: 1.9}}},
+              slotA: {style:{...{flex: 1.42}}},
             }}
             />
         </Gap>
