@@ -28,7 +28,7 @@ export function HeroSection() {
           </Gap>
           <Typography
             sx={{
-                maxWidth: '685px', 
+                maxWidth: '671px', 
                 display: 'block',
                 color: 'rgb(82, 82, 82)', 
                 margin: '30px auto'
