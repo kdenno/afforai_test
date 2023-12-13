@@ -7,7 +7,7 @@ import { Gap } from '../../components/ui/Gap'
 import { Typography } from '../../components/ui/Typography'
 import styles from './homepage.module.css';
 import { HeroSection } from './components/heroSection'
-import { Slots } from './components/slots'
+import { Slots } from '../../layouts/slots'
 import { Card } from '../../components/ui/Card'
 import { CARDS_TEXT } from './utils/contants'
 import { ContentContainer } from '../../layouts/contentContainer'
