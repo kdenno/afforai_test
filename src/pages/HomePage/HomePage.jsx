@@ -25,7 +25,9 @@ export function HomePage() {
     <Navbar />
     <ContentWrapper>
 
-      <HeroSection />
+      <ContentContainer>
+        <HeroSection />
+      </ContentContainer>
 
       <Gap className={styles['appUsersGap']}>
         <div className={styles['appUsers']}>
@@ -38,13 +40,15 @@ export function HomePage() {
 
       <ContentContainer>
 
-        <Gap className={styles['builtForUsersGap']} sx={{maxWidth: '550px' }}>
+        <Gap className={styles['accuracySection']} sx={{maxWidth: '550px' }}>
           <Gap height="50px">
-            <ButtonBadge badgeText="10x your productivity" sx={{width: '130px', margin: '0 auto'}} />
+            <ButtonBadge badgeText="10x your productivity" className={styles['badge']} />
           </Gap>
-          <Typography variant='headlineLarge'>
-            Save yourself from stress & streamline your workflow
-          </Typography >
+          <Gap className={styles['headerLineHeights']} sx={{marginBottom: '20px'}}>
+            <Typography variant='headlineLarge'>
+              Save yourself from stress & streamline your workflow
+            </Typography >
+          </Gap>
           <Typography variant='smallHeadline300'>
             The average worker spends 9 hours per week looking through & gathering information from thick stacks of documents. With Afforai, you can save yourself 8 hours per week (plus a lot of headaches).
           </Typography >
@@ -58,9 +62,11 @@ export function HomePage() {
           <Gap height="50px">
             <ButtonBadge badgeText="Why choose us?" sx={{width: '105px', margin: '0 auto'}}/>
           </Gap>
-          <Typography variant='headlineLarge'>
-            Built for the user
-          </Typography >
+          <Gap className={styles['headerLineHeights']} sx={{marginBottom: '20px'}}>
+            <Typography variant='headlineLarge'>
+              Built for the user
+            </Typography >
+          </Gap>
           <Typography variant='smallHeadline300'>
             Afforai is where exceptional customer focus meets exceptional technology.
           </Typography >
@@ -92,11 +98,14 @@ export function HomePage() {
             />
         </Gap>
 
-        <Gap className={styles['builtForUsersGap']} sx={{maxWidth: '800px'}}>
+        <Gap className={styles['accuracySection']} sx={{maxWidth: '800px'}}>
+        <Gap className={styles['headerLineHeights']} sx={{marginBottom: '20px'}}>
             <Typography variant='headlineLarge'>
               Unquestionable accuracy & reliability
             </Typography >
-          <Gap className={styles['builtForUsersGap']} sx={{maxWidth: '500px'}}>
+          </Gap>
+          
+          <Gap className={styles['accuracySection']} sx={{maxWidth: '500px'}}>
             <Typography variant='smallHeadline300'>
               We pride ourselves on the quality of our chatbot’s responses, and go the extra mile to ensure the accuracy & reliability of our answers.
             </Typography >

@@ -5,27 +5,20 @@ const TYPOGRAPHY_VARIANTS = {
   headline: {
       fontStyle: 'normal',
       fontWeight: 600,
-      fontSize: '48px',
-      lineHeight: '60px',
   },
   headlineLarge: {
       fontSize: 36,
       fontWeight: 600,
-      lineHeight: '60px',
   },
   smallHeadline: {
       fontStyle: 'normal',
       fontWeight: 400,
       fontSize: 18,
-      lineHeight: '24px',
-      letterSpacing: 0.25,
   },
   smallHeadline500: {
       fontStyle: 'normal',
       fontWeight: 500,
       fontSize: 18,
-      lineHeight: '24px',
-      letterSpacing: 0.25,
   },
   smallHeadline400: {
     fontWeight: 500,
@@ -41,44 +34,32 @@ smallHeadline300: {
       fontStyle: 'normal',
       fontWeight: 400,
       fontSize: 16,
-      lineHeight: '24px',
-      letterSpacing: 0.1,
       display: 'inline'
   },
   titleSmall: {
       fontStyle: 'normal',
       fontWeight: 400,
       fontSize: 14,
-      lineHeight: '20px',
-      letterSpacing: 0.1,
       display: 'inline'
   },
   titleSmall500: {
       fontStyle: 'normal',
       fontWeight: 500,
       fontSize: 14,
-      lineHeight: '18px',
-      letterSpacing: 0.1,
       display: 'inline'
   },
   titleSmall400: {
     fontSize: 12,
-    lineHeight: '18px',
-    letterSpacing: 0.1,
     display: 'inline'
 },
 titleSmall300: {
   fontSize: 13,
-  lineHeight: '18px',
-  letterSpacing: 0.1,
   display: 'inline'
 },
   titleXSmall: {
       fontStyle: 'normal',
       fontWeight: 200,
       fontSize: 9,
-      lineHeight: '11px',
-      letterSpacing: 0.1,
       display: 'inline'
   },
   bodyLarge: {
