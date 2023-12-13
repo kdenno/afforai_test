@@ -1,0 +1,12 @@
+.contentContainer {
+    width: '100%';
+    max-width: 1264px;
+    margin: 0;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .contentContainer {
+        margin: 0 4.3333%;
+    }
+}
