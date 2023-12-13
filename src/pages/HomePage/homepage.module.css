@@ -1,0 +1,19 @@
+.appUsers {}
+.appUsers img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+.appUsersGap {
+    text-align: center;
+    line-height: 55px;
+    margin-top: 10px;
+    margin-bottom: 128px;
+}
+
+@media (min-width: 768px) {
+    .appUsersGap {
+        margin-top: 100px;
+    }
+   
+}
