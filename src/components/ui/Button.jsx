@@ -23,25 +23,38 @@ const BUTTON_VARIANTS = {
     textAlign: 'center',
     cursor: 'pointer'
   },
+
+  clear: {
+    textAlign: 'center',
+    cursor: 'pointer'
+  }
  
 };
 
 export function Button(props) {
-  const { onClick, disabled, to, btnText, component, variant = 'secondary', small, sx, ...restProps } = props;
+  const { 
+    onClick, 
+    disabled, 
+    to, 
+    btnText, 
+    component, 
+    variant = 'secondary', 
+    small, 
+    sx, ...restProps } = props;
   
   const customSx = sx || null;
   const isLinkBtn = component === 'link'
 
   return (
     isLinkBtn ? 
-    <LinkElement to = {to}>
+    <LinkElement to={to}>
       <button
         onClick={onClick}
         style={{...BUTTON_VARIANTS[variant], ...customSx}}
         disabled={disabled}
         {...restProps}
       >
-        <Typography variant={small ? 'bodySmall' : 'titleSmall500'}>
+        <Typography variant={small ? 'bodySmall' : 'titleSmall500'} sx={sx}>
           {btnText}
         </Typography>
       </button>
