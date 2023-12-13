@@ -104,13 +104,13 @@ export function HomePage() {
         </Gap>
 
         <Gap sx={{marginBottom: '100px'}}>
-        <Slots 
+          <Slots 
             slots={{
               slotA: <Card title={AScard1.title} imgSrc={AScard1.imgSrc} caption={AScard1.caption} />,
               slotB: <Card title={AScard2.title} imgSrc={AScard2.imgSrc} caption={AScard2.caption} />,
               slotC: <Card title={AScard3.title} imgSrc={AScard3.imgSrc} caption={AScard3.caption} />,
             }}
-            />
+          />
         </Gap>
 
 
