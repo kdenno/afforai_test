@@ -35,9 +35,25 @@ export function HomePage() {
 
       <ContentContainer>
 
+        <Gap className={styles['builtForUsersGap']} sx={{maxWidth: '550px' }}>
+          <Gap height="50px">
+            <ButtonBadge badgeText="10x your productivity" sx={{width: '130px', margin: '0 auto'}} />
+          </Gap>
+          <Typography variant='headlineLarge'>
+            Save yourself from stress & streamline your workflow
+          </Typography >
+          <Typography variant='smallHeadline300'>
+            The average worker spends 9 hours per week looking through & gathering information from thick stacks of documents. With Afforai, you can save yourself 8 hours per week (plus a lot of headaches).
+          </Typography >
+        </Gap>
+
+        <Gap className={styles['productivityGap']}>
+          <img src="/images/laptop-landing-5.png" width="100%" alt="" />
+        </Gap>
+
         <Gap className={styles['builtForUsersGap']}>
           <Gap height="50px">
-            <ButtonBadge badgeText="Why choose us?" />
+            <ButtonBadge badgeText="Why choose us?" sx={{width: '105px', margin: '0 auto'}}/>
           </Gap>
           <Typography variant='headlineLarge'>
             Built for the user
