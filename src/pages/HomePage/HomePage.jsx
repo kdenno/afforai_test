@@ -15,7 +15,10 @@ import { ButtonBadge } from '../../components/ui/ButtonBadge'
 
 
 export function HomePage() {
-  const { biuiltForUser: { card1, card2, card3, card4, card5 }} = CARDS_TEXT;
+  const { 
+    biuiltForUser: { card1, card2, card3, card4, card5 }, 
+    accuracySection: { AScard1, AScard2, AScard3 }
+  } = CARDS_TEXT;
 
   return (
     <>
@@ -88,6 +91,28 @@ export function HomePage() {
             }}
             />
         </Gap>
+
+        <Gap className={styles['builtForUsersGap']} sx={{maxWidth: '800px'}}>
+            <Typography variant='headlineLarge'>
+              Unquestionable accuracy & reliability
+            </Typography >
+          <Gap className={styles['builtForUsersGap']} sx={{maxWidth: '500px'}}>
+            <Typography variant='smallHeadline300'>
+              We pride ourselves on the quality of our chatbot’s responses, and go the extra mile to ensure the accuracy & reliability of our answers.
+            </Typography >
+          </Gap>
+        </Gap>
+
+        <Gap sx={{marginBottom: '100px'}}>
+          <Slots 
+            slots={{
+              slotA: <Card title={AScard1.title} imgSrc={AScard1.imgSrc} caption={AScard1.caption} />,
+              slotB: <Card title={AScard2.title} imgSrc={AScard2.imgSrc} caption={AScard2.caption} />,
+              slotC: <Card title={AScard3.title} imgSrc={AScard3.imgSrc} caption={AScard3.caption} />,
+            }}
+          />
+        </Gap>
+
 
       </ContentContainer>
         

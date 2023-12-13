@@ -28,6 +28,25 @@ export const CARDS_TEXT = {
             imgSrc: "/images/laptop-landing-10.png"
         }
 
+    },
+    accuracySection: {
+        AScard1: {
+            title: 'Trusted by users all over the World',
+            caption: 'Afforai is used all around the World, saving thousands of people time and money with our speed & accuracy.',
+            imgSrc:"/images/laptop-landing-17.png"
+        },
+        AScard2: {
+            title: 'Information filtering',
+            caption: 'Afforai gives you the highest quality answers, and filters out any irrelevant information.',
+            imgSrc: "/images/laptop-landing-18.png"
+        },
+        AScard3: {
+            title: 'Built in Comprehension Model',
+            caption: 'Our powerful comprehension model increases the power of our data retrieval.',
+            imgSrc: "/images/laptop-landing-19.png"
+        },
+        
+
     }
 
 }
