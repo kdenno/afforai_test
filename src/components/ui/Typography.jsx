@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 const TYPOGRAPHY_VARIANTS = {
   headline: {
       fontStyle: 'normal',
-      fontWeight: 700,
-      fontSize: 24,
-      lineHeight: '32px',
+      fontWeight: 600,
+      fontSize: '48px',
+      lineHeight: '60px',
   },
   headlineLarge: {
       fontSize: 24,
@@ -35,7 +35,7 @@ const TYPOGRAPHY_VARIANTS = {
 },
   titleMedium: {
       fontStyle: 'normal',
-      fontWeight: 700,
+      fontWeight: 400,
       fontSize: 16,
       lineHeight: '24px',
       letterSpacing: 0.1,

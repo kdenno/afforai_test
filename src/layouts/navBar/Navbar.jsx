@@ -43,62 +43,64 @@ export function Navbar() {
     })
 
     return (
-        <div className={styles['navWrapper']}>
+        <div className={styles['header']}>
+            <div className={styles['navWrapper']}>
 
-            <nav className={styles['nav']}>
+                <nav className={styles['nav']}>
 
-                <div className={styles['desktopMenu']}>
+                    <div className={styles['desktopMenu']}>
 
-                    <Logo/>
+                        <Logo/>
 
-                    <div className={styles['navLinks']}>
+                        <div className={styles['navLinks']}>
+                            <ul>
+                                {navLnks}
+                            </ul>
+                        </div>
+
+                        <div className={styles['navActions']}>
+
+                            <Button 
+                                aria-label="login" 
+                                btnText="Log in" 
+                                sx={{marginRight: 8}} 
+                                className={styles['navActionsBtn']} 
+                                component="link"
+                                to="/login"
+                            />
+                            <Button 
+                            aria-label="try-for-free" 
+                            btnText="Try for free" 
+                            variant="primary"
+                            className={styles['navActionsBtn']}  
+                            component="link"
+                            to="/signup"
+                            />
+                            
+                            <div 
+                                aria-label="toggle-mobile-menu" 
+                                className={styles['mobileMenuToggler']}
+                                style={{border: `solid 1px ${showMobileMenu ? 'rgb(96, 4, 255)' : 'rgb(209, 213, 219)'}`}}
+                                onClick={() => setShowMobileMenu(!showMobileMenu)}
+                            >
+                                <div className={styles['stick']}></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div 
+                        className={styles['mobilenavLinks']}
+                        style={{display: `${showMobileMenu ? 'block' : 'none'}`}}
+                    >
                         <ul>
                             {navLnks}
                         </ul>
                     </div>
 
-                    <div className={styles['navActions']}>
-
-                        <Button 
-                            aria-label="login" 
-                            btnText="Log in" 
-                            sx={{marginRight: 8}} 
-                            className={styles['navActionsBtn']} 
-                            component="link"
-                            to="/login"
-                        />
-                        <Button 
-                        aria-label="try-for-free" 
-                        btnText="Try for free" 
-                        variant="primary"
-                        className={styles['navActionsBtn']}  
-                        component="link"
-                        to="/signup"
-                        />
-                        
-                        <div 
-                            aria-label="toggle-mobile-menu" 
-                            className={styles['mobileMenuToggler']}
-                            style={{border: `solid 1px ${showMobileMenu ? 'rgb(96, 4, 255)' : 'rgb(209, 213, 219)'}`}}
-                            onClick={() => setShowMobileMenu(!showMobileMenu)}
-                        >
-                            <div className={styles['stick']}></div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div 
-                    className={styles['mobilenavLinks']}
-                    style={{display: `${showMobileMenu ? 'block' : 'none'}`}}
-                >
-                    <ul>
-                        {navLnks}
-                    </ul>
-                </div>
-
-            </nav>
+                </nav>
+            </div>
         </div>
     )
 }
