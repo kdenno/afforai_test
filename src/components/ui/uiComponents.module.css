@@ -1,46 +1,43 @@
-
 .logo {
-    text-align: left;
-    margin-top: 7px;
-    display: flex;
+  text-align: left;
+  margin-top: 7px;
+  display: flex;
 }
 
 .logo .title {
-    margin-left: 7px
+  margin-left: 7px;
 }
 
 .card {
-    border: solid 1px rgb(209, 213, 219);
-    border-radius: 16px;
-    overflow: hidden;
-    height: 100%;
+  border: solid 1px rgb(209, 213, 219);
+  border-radius: 16px;
+  overflow: hidden;
+  height: 100%;
 }
 .card .imgSlot {
-    border-bottom: solid 1px rgb(209, 213, 219);
-    background: rgb(245, 245, 245);
-    overflow: hidden;
-    
+  border-bottom: solid 1px rgb(209, 213, 219);
+  background: rgb(245, 245, 245);
+  overflow: hidden;
 }
 .card .imgSlot img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 .card .caption {
-    padding: 15px;
+  padding: 15px;
 }
 
 .buttonBudge {
-    padding: 6px 16px;
-    border-radius: 8px;
-    background: rgb(250, 250, 250);
-    border: 2px solid rgb(128, 54, 255);
-    color: rgb(128, 54, 255);
-    font-size: 13px;
-    
+  padding: 6px 16px;
+  border-radius: 8px;
+  background: rgb(250, 250, 250);
+  border: 2px solid rgb(128, 54, 255);
+  color: rgb(128, 54, 255);
+  font-size: 13px;
 }
 
 @media (min-width: 768px) {
-    .slots {
-        display: flex;
-    } 
+  .slots {
+    display: flex;
+  }
 }

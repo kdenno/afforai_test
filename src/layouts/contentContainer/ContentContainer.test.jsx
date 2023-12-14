@@ -1,10 +1,10 @@
 import { render, screen } from "@testing-library/react";
-import { ContentContainer } from './ContentContainer';
+import { ContentContainer } from "./ContentContainer";
 
-const testCopy = 'Foobar';
+const testCopy = "Foobar";
 
-test('renders children', () => {
-    render(<ContentContainer>{testCopy}</ContentContainer>);
-    const placeholderText = screen.getByText(testCopy);
-    expect(placeholderText).toBeInTheDocument();
+test("renders children", () => {
+  render(<ContentContainer>{testCopy}</ContentContainer>);
+  const placeholderText = screen.getByText(testCopy);
+  expect(placeholderText).toBeInTheDocument();
 });

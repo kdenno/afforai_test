@@ -1,27 +1,26 @@
 .slots > div {
-    margin: 18px 0;
+  margin: 18px 0;
 }
 .slotA {
-    flex: 1;
+  flex: 1;
 }
 .slotB {
-    flex: 1;
-
+  flex: 1;
 }
 .slotC {
-    flex: 1;
+  flex: 1;
 }
 .slotAB {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 768px) {
-    .slots {
-        display: flex;
-    }
-    .slots > div {
-        margin: 10px 7px;
-    } 
+  .slots {
+    display: flex;
+  }
+  .slots > div {
+    margin: 10px 7px;
+  }
 }
