@@ -25,9 +25,7 @@ export function HomePage() {
     <Navbar />
     <ContentWrapper>
 
-      <ContentContainer>
         <HeroSection />
-      </ContentContainer>
 
       <Gap className={styles['appUsersGap']}>
         <div className={styles['appUsers']}>
@@ -82,8 +80,8 @@ export function HomePage() {
               slotA: {style:{...{flex: 1.4}}},
               slotB: {style:{...{flex: 2}}},
             }}
-            />
-            <Slots 
+          />
+          <Slots 
             slots={{
               slotAB: {
                 AB1: <Card title={card3.title} imgSrc={card3.imgSrc} caption={card3.caption} />,
@@ -95,16 +93,16 @@ export function HomePage() {
               slotAB: {style:{...{flex: 1.9}}},
               slotA: {style:{...{flex: 1.42}}},
             }}
-            />
+          />
         </Gap>
 
         <Gap className={styles['accuracySection']} sx={{maxWidth: '800px'}}>
-        <Gap className={styles['headerLineHeights']} sx={{marginBottom: '20px'}}>
-            <Typography variant='headlineLarge'>
-              Unquestionable accuracy & reliability
-            </Typography >
+          <Gap className={styles['headerLineHeights']} sx={{marginBottom: '20px'}}>
+              <Typography variant='headlineLarge'>
+                Unquestionable accuracy & reliability
+              </Typography >
           </Gap>
-          
+            
           <Gap className={styles['accuracySection']} sx={{maxWidth: '500px'}}>
             <Typography variant='smallHeadline300'>
               We pride ourselves on the quality of our chatbot’s responses, and go the extra mile to ensure the accuracy & reliability of our answers.

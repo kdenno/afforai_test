@@ -24,10 +24,11 @@ export function Footer() {
                             <div key={lnk.label} className={styles['footerLink']}>
                                 {
                                 isExternalLink ?  
-                                    <a target={lnk.target}
-                                    rel='noopener noreferrer'
-                                    href={lnk.to}
-                                    aria-label={`${lnk.label}`}
+                                    <a 
+                                        target={lnk.target}
+                                        rel='noopener noreferrer'
+                                        href={lnk.to}
+                                        aria-label={`${lnk.label}`}
                                     >
                                         <Typography variant='titleSmall400' sx={{color: 'rgb(82, 82, 82)'}}>
                                             {lnk.label}
