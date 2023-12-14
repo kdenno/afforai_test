@@ -18,7 +18,9 @@ export function HeroSection() {
               height="20"
               alt="AppSumo"
             />
+
             <span>Now on AppSumo</span>
+
             <Button
               aria-label="appsumo-deal"
               btnText="Get Lifetime Deal"
@@ -28,6 +30,7 @@ export function HeroSection() {
               to="https://appsumo.8odi.net/3eR3xn"
             />
           </div>
+
           <Gap className={styles["customHeader"]}>
             <Typography
               variant="headline"
@@ -36,6 +39,7 @@ export function HeroSection() {
               Your second brain for maximizing productivity
             </Typography>
           </Gap>
+
           <Typography
             sx={{
               maxWidth: "671px",
@@ -50,6 +54,7 @@ export function HeroSection() {
             lengthy research documents to stacks of dry compliance requirements
             and extract the key findings you need.
           </Typography>
+
           <div style={{ position: "relative", zIndex: 5 }}>
             <Button
               aria-label="try-for-free"
@@ -60,6 +65,7 @@ export function HeroSection() {
               component="link"
               to="/signup"
             />
+
             <Button
               aria-label="navigate-to-pricing-page"
               btnText="View Pricing"
