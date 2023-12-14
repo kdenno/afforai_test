@@ -18,10 +18,11 @@ export function Navbar() {
             <li key={lnk.label}>
                 {
                     isExternalLink ?  
-                        <a target={lnk.target}
-                        rel='noopener noreferrer'
-                        href={lnk.to}
-                        aria-label={`${lnk.label}`}
+                        <a 
+                            target={lnk.target}
+                            rel='noopener noreferrer'
+                            href={lnk.to}
+                            aria-label={`${lnk.label}`}
                         >
                             <Typography variant='titleSmall500'>
                                 {lnk.label}
@@ -69,12 +70,12 @@ export function Navbar() {
                                 to="/login"
                             />
                             <Button 
-                            aria-label="try-for-free" 
-                            btnText="Try for free" 
-                            variant="primary"
-                            className={styles['navActionsBtn']}  
-                            component="link"
-                            to="/signup"
+                                aria-label="try-for-free" 
+                                btnText="Try for free" 
+                                variant="primary"
+                                className={styles['navActionsBtn']}  
+                                component="link"
+                                to="/signup"
                             />
                             
                             <div 

@@ -4,11 +4,13 @@ import { Typography } from '../../../../components/ui/Typography'
 import { Button } from '../../../../components/ui/Button'
 import styles from './heroSection.module.css';
 import { Gap } from '../../../../components/ui/Gap';
+import { ContentContainer } from '../../../../layouts/contentContainer';
 
 export function HeroSection() {
   return (
     <div className={styles['hero']}>
         <div className={styles['heroInner']}>
+          <ContentContainer>
           <div className={styles['sumoCta']}>
             <img src="/images/appsumo.png" width="26" height="20" alt="AppSumo" />
             <span>Now on AppSumo</span>
@@ -19,7 +21,7 @@ export function HeroSection() {
                 variant="clear"
                 className={styles['sumoCtaBtn']} 
                 to="https://appsumo.8odi.net/3eR3xn"
-              />
+            />
           </div>
           <Gap className={styles['customHeader']}>
             <Typography variant='headline' sx={{maxWidth: '659px', margin: '20px auto'}}>
@@ -56,6 +58,7 @@ export function HeroSection() {
                 to="/pricing"
               />
             </div>
+            </ContentContainer>
         </div>
 
         <div className={styles['dashImgDiv']}>
