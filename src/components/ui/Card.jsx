@@ -14,6 +14,7 @@ export function Card(props) {
       <div className={styles["imgSlot"]}>
         <img src={`${imgSrc}`} width="100%" height="100%" />
       </div>
+
       <div className={styles["caption"]}>
         <div>
           <Typography variant="smallHeadline400">{title}</Typography>

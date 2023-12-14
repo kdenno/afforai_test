@@ -32,6 +32,7 @@ export function HomePage() {
               <span style={{ color: "rgb(128, 54, 255)" }}>20,000+</span> users
               around the world
             </Typography>
+
             <img
               src="/images/laptop-landing-2.png"
               width="330"
@@ -49,6 +50,7 @@ export function HomePage() {
                 className={styles["badge"]}
               />
             </Gap>
+
             <Gap
               className={styles["headerLineHeights"]}
               sx={{ marginBottom: "20px" }}
@@ -57,6 +59,7 @@ export function HomePage() {
                 Save yourself from stress & streamline your workflow
               </Typography>
             </Gap>
+
             <Typography variant="smallHeadline300">
               The average worker spends 9 hours per week looking through &
               gathering information from thick stacks of documents. With
@@ -76,6 +79,7 @@ export function HomePage() {
                 sx={{ width: "105px", margin: "0 auto" }}
               />
             </Gap>
+
             <Gap
               className={styles["headerLineHeights"]}
               sx={{ marginBottom: "20px" }}
@@ -84,6 +88,7 @@ export function HomePage() {
                 Built for the user
               </Typography>
             </Gap>
+
             <Typography variant="smallHeadline300">
               Afforai is where exceptional customer focus meets exceptional
               technology.
@@ -113,6 +118,7 @@ export function HomePage() {
                 slotB: { style: { ...{ flex: 2 } } },
               }}
             />
+
             <Slots
               slots={{
                 slotAB: {
@@ -198,6 +204,7 @@ export function HomePage() {
           </Gap>
         </ContentContainer>
       </ContentWrapper>
+
       <Footer />
     </>
   );
